@@ -1,0 +1,192 @@
+﻿<Window x:Class="WpfDataBindingDataBase.BindingDataBaseWiev"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDataBindingDataBase"
+        mc:Ignorable="d"
+        Title="BindingDataBaseWiev" Height="531" Width="447.2" Loaded="Window_Loaded">
+
+    <Window.Resources>
+        <DataTemplate x:Key="CustomerTemplate">
+            <StackPanel Margin="0,0,0,5"
+                  Orientation="Horizontal">
+                <TextBlock Margin="10,0,0,0"
+                   VerticalAlignment="Center"
+                   Text="{Binding Path=CompanyName}" />
+                <TextBlock Text=" (" />
+                <TextBlock VerticalAlignment="Center"
+                   Text="{Binding Path=City}"/>
+                <TextBlock Text=", " />
+                <TextBlock VerticalAlignment="Center"
+                   Text="{Binding Path=Country}" />
+                <TextBlock Text=")" />
+
+            </StackPanel>
+        </DataTemplate>
+
+
+    </Window.Resources>
+    
+    <Grid Grid.Row="1" DataContext="{Binding ElementName=listBox,Path=SelectedItem}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="176*" />
+            <ColumnDefinition Width="265*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <ListBox x:Name="listBox"   
+             ItemTemplate="{StaticResource CustomerTemplate}"    
+             HorizontalAlignment="Stretch"
+             Height="200"
+             Grid.Row="0"
+             Grid.Column="0"
+             Margin="7,8,6.8,7.2"
+             Grid.ColumnSpan="2"
+             SelectionChanged="listBox_SelectionChanged" />
+        <TextBlock Grid.Row="1"
+               Grid.Column="0"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Left"
+               Text="Company name"
+               Margin="7,4.8,0,4" />
+        <TextBox Grid.Row="1"
+           Text="{Binding Path=CompanyName}"
+             Grid.Column="1"
+             Margin="3,2.8,2.8,3"
+             MaxHeight="35"
+            />
+        <TextBlock Grid.Row="2"
+               Grid.Column="0"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Left"
+               Text="Contact name"
+               Margin="7,4.8,0,4" />
+        <TextBox Grid.Row="2"
+             Text="{Binding Path=ContactName}"
+             Grid.Column="1"
+             Margin="3,2.8,2.8,3"
+             MaxHeight="35"
+            />
+        <TextBlock Grid.Row="3"
+               Grid.Column="0"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Left"
+               Text="Contact title"
+               Margin="7,4.8,0,4" />
+        <TextBox Grid.Row="3"
+             Text="{Binding Path=ContactTitle}"
+             Grid.Column="1"
+             Margin="3,2.8,2.8,3"
+             MaxHeight="35"
+            />
+        <TextBlock Grid.Row="4"
+               Grid.Column="0"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Left"
+               Text="Adress"
+               Margin="7,4.8,0,4" />
+        <TextBox Grid.Row="4"
+             Text="{Binding Path=Address}"
+             Grid.Column="1"
+             Margin="3,2.8,2.8,3"
+             MaxHeight="35"
+            />
+        <TextBlock Grid.Row="5"
+               Grid.Column="0"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Left"
+               Text="City"
+               Margin="7,4.8,0,4" />
+        <TextBox Grid.Row="5"
+             Text="{Binding Path=City}"
+             Grid.Column="1"
+             Margin="3,2.8,2.8,3"
+             MaxHeight="35"
+             />
+        <TextBlock Grid.Row="6"
+               Grid.Column="0"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Left"
+               Text="Region"
+               Margin="7,4.8,0,4" />
+        <TextBox Grid.Row="6"
+             Text="{Binding Path=Region}"
+             Grid.Column="1"
+             Margin="3,2.8,2.8,3"
+             MaxHeight="35"
+            />
+        <TextBlock Grid.Row="7"
+               Grid.Column="0"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Left"
+               Text="Postal code"
+               Margin="7,4.8,0,4" />
+        <TextBox Grid.Row="7"
+             Text="{Binding Path=PostalCode}"
+             Grid.Column="1"
+             Margin="3,2.8,2.8,3"
+             MaxHeight="35"
+              />
+        <TextBlock Grid.Row="8"
+               Grid.Column="0"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Left"
+               Text="Contry"
+               Margin="7,4.8,0,4" />
+        <TextBox Grid.Row="8"
+             Text="{Binding Path=Country}"
+             Grid.Column="1"
+             Margin="3,2.8,2.8,3"
+             MaxHeight="35"
+            />
+        <TextBlock Grid.Row="9"
+               Grid.Column="0"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Left"
+               Text="Phone"
+               Margin="7,4.8,0,4" />
+        <TextBox Grid.Row="9"
+             Text="{Binding Path=Phone}"
+             Grid.Column="1"
+             Margin="3,2.8,2.8,3"
+             MaxHeight="35"
+            />
+        <TextBlock Grid.Row="10"
+               Grid.Column="0"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Left"
+               Text="Fax"
+               Margin="7,4.8,0,4" />
+        <TextBox Grid.Row="10"
+             Text="{Binding Path=Fax}"
+             Grid.Column="1"
+             Margin="3,2.8,2.8,3"
+             MaxHeight="35"
+             />
+        <TextBlock Grid.Row="11"
+               Grid.Column="0"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Left"
+               Text="Number of orders"
+               Margin="7,4.8,0,4" />
+        <TextBlock x:Name="ordersTextBox"
+               Grid.Row="11"
+               Grid.Column="1"
+               Text="Dummy"/>
+
+    </Grid>
+
+</Window>

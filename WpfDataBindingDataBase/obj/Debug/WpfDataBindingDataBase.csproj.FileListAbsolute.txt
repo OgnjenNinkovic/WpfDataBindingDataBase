@@ -1,0 +1,17 @@
+C:\Users\OGI-PC\Desktop\WpfDataBindingDataBase\WpfDataBindingDataBase\bin\Debug\WpfDataBindingDataBase.exe.config
+C:\Users\OGI-PC\Desktop\WpfDataBindingDataBase\WpfDataBindingDataBase\bin\Debug\WpfDataBindingDataBase.exe
+C:\Users\OGI-PC\Desktop\WpfDataBindingDataBase\WpfDataBindingDataBase\bin\Debug\WpfDataBindingDataBase.pdb
+C:\Users\OGI-PC\Desktop\WpfDataBindingDataBase\WpfDataBindingDataBase\obj\Debug\WpfDataBindingDataBase.csprojAssemblyReference.cache
+C:\Users\OGI-PC\Desktop\WpfDataBindingDataBase\WpfDataBindingDataBase\obj\Debug\BindingDataBaseWiev.g.cs
+C:\Users\OGI-PC\Desktop\WpfDataBindingDataBase\WpfDataBindingDataBase\obj\Debug\MainWindow.g.cs
+C:\Users\OGI-PC\Desktop\WpfDataBindingDataBase\WpfDataBindingDataBase\obj\Debug\App.g.cs
+C:\Users\OGI-PC\Desktop\WpfDataBindingDataBase\WpfDataBindingDataBase\obj\Debug\WpfDataBindingDataBase_MarkupCompile.cache
+C:\Users\OGI-PC\Desktop\WpfDataBindingDataBase\WpfDataBindingDataBase\obj\Debug\WpfDataBindingDataBase_MarkupCompile.lref
+C:\Users\OGI-PC\Desktop\WpfDataBindingDataBase\WpfDataBindingDataBase\obj\Debug\BindingDataBaseWiev.baml
+C:\Users\OGI-PC\Desktop\WpfDataBindingDataBase\WpfDataBindingDataBase\obj\Debug\MainWindow.baml
+C:\Users\OGI-PC\Desktop\WpfDataBindingDataBase\WpfDataBindingDataBase\obj\Debug\WpfDataBindingDataBase.g.resources
+C:\Users\OGI-PC\Desktop\WpfDataBindingDataBase\WpfDataBindingDataBase\obj\Debug\WpfDataBindingDataBase.Properties.Resources.resources
+C:\Users\OGI-PC\Desktop\WpfDataBindingDataBase\WpfDataBindingDataBase\obj\Debug\WpfDataBindingDataBase.csproj.GenerateResource.cache
+C:\Users\OGI-PC\Desktop\WpfDataBindingDataBase\WpfDataBindingDataBase\obj\Debug\WpfDataBindingDataBase.csproj.CoreCompileInputs.cache
+C:\Users\OGI-PC\Desktop\WpfDataBindingDataBase\WpfDataBindingDataBase\obj\Debug\WpfDataBindingDataBase.exe
+C:\Users\OGI-PC\Desktop\WpfDataBindingDataBase\WpfDataBindingDataBase\obj\Debug\WpfDataBindingDataBase.pdb
